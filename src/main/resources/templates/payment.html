@@ -12,7 +12,7 @@
 <script th:inline="javascript">
 function pay() {
     var rzp = new Razorpay({
-        key: "rzp_test_TWtH7bVNogv7DM",
+        key: "${razorpay.key}",
         order_id: "${payment.razorPayOrderId}"
     });
     rzp.open();
